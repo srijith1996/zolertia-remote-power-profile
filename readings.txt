@@ -1,0 +1,13 @@
+radio off, sensor off, compute off : 33.6mA to 34.4mA
+radio off, sensor off, compute on  : 
+
+
+sampling rate fixed at 2.5kS/s
+taken samples from -800.0ms to +800.0ms
+
+for the measurements files in remote-revb:
+col1: current value
+col2: mean (mu)
+col3: minimum (m)
+col4: maximum (M)
+col5: std dev (sigma)
