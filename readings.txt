@@ -1,7 +1,3 @@
-radio off, sensor off, compute off : 33.6mA to 34.4mA
-radio off, sensor off, compute on  : 
-
-
 sampling rate fixed at 2.5kS/s
 taken samples from -800.0ms to +800.0ms
 
