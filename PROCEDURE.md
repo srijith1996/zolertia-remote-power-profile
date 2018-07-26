@@ -15,6 +15,7 @@ example@test$ vim project-conf.h
   # more on this from line number __
 
 example@test$ sudo make PORT=<dev tty port> udp-server.upload login
+  # replace the <dev tty port> with the port you want to upload the code to
 
 ```
 
@@ -62,7 +63,7 @@ Using the DSO and current probe (Tektronics)
 1. For setting up the current probe:
     - connect the current probe output to the current amplifier
     - connect the current amplifier to DSO output
-      [CAUTION: make sure the DSO channel has load resistance of 50ohms
+      [CAUTION: make sure the DSO channel has load resistance of 50ohms]
     - Start up the DSO and the current amplifier.
     - Close the current probe if notified by the amplifier indicators. (PROBE OPEN)
     - Press PROBE DEGAUSS AUTOBALANCE, to set DC offset to 0
@@ -97,4 +98,13 @@ Using the DSO and current probe (Tektronics)
     - Under Select for Export choose Waveform(data)
     - Now again click on File and then Export
     - Save the dat file in a convenient location.
+    
+Computing energy from the readings
+----------------------------------
+
+Energy consumed by an electric circuit is the integral of the power consumption with respect to time.
+
+![Alt Text](energy.gif)
+
+Thus we integrate the current (find the area under the curve) and multiply it with the constant DC supply voltage.
     
