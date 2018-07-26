@@ -4,17 +4,18 @@ Procedure for power profiling RE-Mote
 Different configurations of radio and sensors
 ---------------------------------------------
 
-For accessing the source code for this project, on this computer:
+For accessing and using the source code for this project, from gitlab:
 
 ``` shell
-example@test$ cd /home/srijith/satvam/contiki-test
-example@test$ git checkout power-profile
-example@test$ cd examples/udp-ipv6
-example@test$ vim project-conf.h
-  # edit the first three lines as per your need
-  # more on this from line number __
+$ git clone https://gitlab.com/satvam/contiki
+$ cd contiki 
 
-example@test$ sudo make PORT=<dev tty port> udp-server.upload login
+$ git checkout power-profile
+$ cd examples/udp-ipv6
+$ vim project-conf.h
+  # edit the first four lines as per your need
+
+$ sudo make PORT=<dev tty port> udp-server.upload login
   # replace the <dev tty port> with the port you want to upload the code to
 
 ```
@@ -41,6 +42,12 @@ These different configurations should be tested:
       /* note, just disabling this macro may not do
        * You must also physically disconnect the sensor
        */
+   ```
+
+4. Computation
+   ```c
+      #define COMPUTE_ON   0    /* switch off computation */
+      #define COMPUTE_OFF  1    /* switch on computation  */
    ```
 
 Equipment for current measurements
