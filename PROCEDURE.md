@@ -7,8 +7,8 @@ Different configurations of radio and sensors
 For accessing and using the source code for this project, from gitlab:
 
 ``` shell
-$ git clone https://gitlab.com/satvam/contiki
-$ cd contiki 
+$ git clone https://github.com/srijith1996/contiki-pp
+$ cd contiki-pp
 
 $ git checkout power-profile
 $ cd examples/udp-ipv6
