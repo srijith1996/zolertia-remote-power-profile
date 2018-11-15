@@ -1,1 +1,9 @@
 *~
+
+#ignore archives
+*.zip
+*.tar*
+
+#tex outputs
+*.out
+*.log
